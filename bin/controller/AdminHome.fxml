@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vb" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHome">
+   <children>
+      <HBox prefHeight="0.0" prefWidth="1000.0">
+         <children>
+            <SVGPath content="M89.217,72.686c0.111-0.332,0.174-0.688,0.174-1.058V32.771c0-1.842-1.494-3.335-3.336-3.335H67.488v41.359c0,0.664-0.12,1.299-0.332,1.891h-2.178c0.111-0.332,0.174-0.688,0.174-1.058V18.261c0-1.842-1.494-3.335-3.336-3.335H32.687c-1.842,0-3.335,1.493-3.335,3.335v53.367c0,0.37,0.063,0.726,0.174,1.058h-2.177c-0.212-0.592-0.332-1.227-0.332-1.891V29.436H8.895c-1.842,0-3.335,1.493-3.335,3.335v38.857c0,0.37,0.063,0.726,0.173,1.058H0v6.894h94.505v-6.894H89.217L89.217,72.686z M15.565,59.064h-4.781v-4.78h4.781V59.064z M15.565,50.671h-4.781V45.89h4.781V50.671z M15.565,42.555h-4.781v-4.781h4.781V42.555z M23.015,59.064h-4.781v-4.78h4.781V59.064z M23.015,50.671h-4.781V45.89h4.781V50.671z M23.015,42.555h-4.781v-4.781h4.781V42.555z M54.674,72.463H40.637V54.951h14.037V72.463z M47.252,39.941c-6.493,0-11.757-5.264-11.757-11.757c0-6.494,5.265-11.758,11.757-11.758c6.494,0,11.758,5.264,11.758,11.758C59.01,34.678,53.746,39.941,47.252,39.941z M77.605,59.064h-4.78v-4.78h4.78V59.064z M77.605,50.671h-4.78V45.89h4.78V50.671z M77.605,42.555h-4.78v-4.781h4.78V42.555z M85.054,59.064h-4.78v-4.78h4.78V59.064z M85.054,50.671h-4.78V45.89h4.78V50.671z M85.054,42.555h-4.78v-4.781h4.78V42.555z M50.17,25.266h4.503v5.836H50.17v4.505h-5.836v-4.505h-4.503v-5.836h4.503v-4.503h5.836V25.266z" />
+            <AnchorPane>
+               <children>
+                  <Label text="My Hospital">
+                     <font>
+                        <Font name="Bell MT" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="35.0" text="Hospital Management System">
+                     <font>
+                        <Font name="Bell MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="65.0" prefWidth="1091.0">
+               <children>
+                  <SVGPath content="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" layoutX="886.0" layoutY="14.0" onMouseClicked="#signout" scaleX="2.0" scaleY="2.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="TOP_CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="753.0">
+               <children>
+                  <AnchorPane prefHeight="36.0" prefWidth="40.0">
+                     <children>
+                        <SVGPath content="M19,9.3V4h-3v2.6L12,3L2,12h3v8h5v-6h4v6h5v-8h3L19,9.3z M10,10c0-1.1,0.9-2,2-2s2,0.9,2,2H10z" layoutX="2.0" layoutY="7.0" scaleX="1.5" scaleY="1.5" />
+                     </children>
+                  </AnchorPane>
+                  <Label text="Admin Home">
+                     <font>
+                        <Font name="Bell MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="54.0" prefWidth="1200.0">
+         <children>
+            <HBox layoutX="56.0" layoutY="11.0" spacing="20.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" spacing="10.0">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <SVGPath content="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" scaleX="1.5" scaleY="1.5" />
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="userID" styleClass="titleFont2" text="ID:" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" spacing="3.0">
+                     <children>
+                        <SVGPath content="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z" />
+                        <Label fx:id="userName" styleClass="titleFont2" text="ID:" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <FlowPane fx:id="tp" alignment="TOP_CENTER" hgap="30.0" prefHeight="432.0" prefWidth="1160.0" vgap="30.0">
+         <children>
+            <VBox alignment="CENTER" onMouseClicked="#appointment" prefHeight="200.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <SVGPath content="M16.53 11.06L15.47 10l-4.88 4.88-2.12-2.12-1.06 1.06L10.59 17l5.94-5.94zM19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z" onMouseClicked="#appointment" scaleX="3.0" scaleY="3.0" styleClass="txtFill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+                  <Label onMouseClicked="#appointment" text="Appointment">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont1" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox alignment="CENTER" onMouseClicked="#employee" prefHeight="200.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <SVGPath content="M12,12.75c1.63,0,3.07,0.39,4.24,0.9c1.08,0.48,1.76,1.56,1.76,2.73L18,18H6l0-1.61c0-1.18,0.68-2.26,1.76-2.73 C8.93,13.14,10.37,12.75,12,12.75z M4,13c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2s-2,0.9-2,2C2,12.1,2.9,13,4,13z M5.13,14.1 C4.76,14.04,4.39,14,4,14c-0.99,0-1.93,0.21-2.78,0.58C0.48,14.9,0,15.62,0,16.43V18l4.5,0v-1.61C4.5,15.56,4.73,14.78,5.13,14.1z M20,13c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2s-2,0.9-2,2C18,12.1,18.9,13,20,13z M24,16.43c0-0.81-0.48-1.53-1.22-1.85 C21.93,14.21,20.99,14,20,14c-0.39,0-0.76,0.04-1.13,0.1c0.4,0.68,0.63,1.46,0.63,2.29V18l4.5,0V16.43z M12,6c1.66,0,3,1.34,3,3 c0,1.66-1.34,3-3,3s-3-1.34-3-3C9,7.34,10.34,6,12,6z" onMouseClicked="#employee" scaleX="3.0" scaleY="3.0" styleClass="txtFill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+                  <Label onMouseClicked="#employee" text="Employee">
+                     <styleClass>
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont1" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox alignment="CENTER" onMouseClicked="#patient" prefHeight="200.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <SVGPath content="M4.5,4c0-1.11,0.89-2,2-2s2,0.89,2,2s-0.89,2-2,2S4.5,5.11,4.5,4z M10,10.95V9c0-1.1-0.9-2-2-2H5C3.9,7,3,7.9,3,9v6h2v7 h3.5v-0.11c-1.24-1.26-2-2.99-2-4.89C6.5,14.42,7.91,12.16,10,10.95z M16.5,17c0,1.65-1.35,3-3,3s-3-1.35-3-3 c0-1.11,0.61-2.06,1.5-2.58v-2.16C9.98,12.9,8.5,14.77,8.5,17c0,2.76,2.24,5,5,5s5-2.24,5-5H16.5z M19.54,14H15V8h-2v8h5.46 l2.47,3.71l1.66-1.11L19.54,14z" onMouseClicked="#patient" scaleX="3.0" scaleY="3.0" styleClass="txtFill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+                  <Label onMouseClicked="#patient" text="Patient">
+                     <styleClass>
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont1" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox alignment="CENTER" onMouseClicked="#pharmamcy" prefHeight="200.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <SVGPath content="M20,6h-4V4c0-1.1-0.9-2-2-2h-4C8.9,2,8,2.9,8,4v2H4C2.9,6,2,6.9,2,8v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V8 C22,6.9,21.1,6,20,6z M10,4h4v2h-4V4z M16,15h-3v3h-2v-3H8v-2h3v-3h2v3h3V15z" onMouseClicked="#pharmamcy" scaleX="3.0" scaleY="3.0" styleClass="txtFill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+                  <Label onMouseClicked="#pharmamcy" text="Pharmacy">
+                     <styleClass>
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont1" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox alignment="CENTER" onMouseClicked="#profile" prefHeight="200.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <SVGPath content="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" onMouseClicked="#profile" scaleX="3.0" scaleY="3.0" styleClass="txtFill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+                  <Label onMouseClicked="#profile" text="Profile">
+                     <styleClass>
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont1" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox alignment="CENTER" onMouseClicked="#room" prefHeight="200.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <SVGPath content="M12,7V3H2v18h20V7H12z M6,19H4v-2h2V19z M6,15H4v-2h2V15z M6,11H4V9h2V11z M6,7H4V5h2V7z M10,19H8v-2h2V19z M10,15H8v-2h2 V15z M10,11H8V9h2V11z M10,7H8V5h2V7z M20,19h-8v-2h2v-2h-2v-2h2v-2h-2V9h8V19z M18,11h-2v2h2V11z M18,15h-2v2h2V15z" onMouseClicked="#room" scaleX="3.0" scaleY="3.0" styleClass="txtFill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+                  <Label onMouseClicked="#room" text="Room">
+                     <styleClass>
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont1" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox alignment="CENTER" onMouseClicked="#saleHistory" prefHeight="200.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <SVGPath content="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" onMouseClicked="#saleHistory" scaleX="3.0" scaleY="3.0" styleClass="txtFill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+                  <Label onMouseClicked="#saleHistory" text="Sale History">
+                     <styleClass>
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont1" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+            <VBox alignment="CENTER" onMouseClicked="#schedule" prefHeight="200.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <SVGPath content="M17 10H7v2h10v-2zm2-7h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zm-5-5H7v2h7v-2z" onMouseClicked="#schedule" scaleX="3.0" scaleY="3.0" styleClass="txtFill">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+                  <Label onMouseClicked="#schedule" text="Schedule">
+                     <styleClass>
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont1" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="bg" />
+                  <String fx:value="menu" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+         </children>
+      </FlowPane>
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="1200.0">
+         <children>
+            <Label text="Copyright ©Metro Students">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="All rights Served">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="prefSize" />
+      <String fx:value="bgColor" />
+   </styleClass>
+</VBox>

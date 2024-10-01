@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vb" prefHeight="613.0" prefWidth="1200.0" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminRoomList">
+   <children>
+      <AnchorPane prefHeight="723.0" prefWidth="1200.0">
+         <children>
+            <HBox prefWidth="1200.0">
+               <children>
+                  <AnchorPane prefHeight="45.0" prefWidth="64.0">
+                     <children>
+                        <SVGPath content="M12,7V3H2v18h20V7H12z M6,19H4v-2h2V19z M6,15H4v-2h2V15z M6,11H4V9h2V11z M6,7H4V5h2V7z M10,19H8v-2h2V19z M10,15H8v-2h2 V15z M10,11H8V9h2V11z M10,7H8V5h2V7z M20,19h-8v-2h2v-2h-2v-2h2v-2h-2V9h8V19z M18,11h-2v2h2V11z M18,15h-2v2h2V15z" layoutX="9.0" layoutY="11.0" scaleX="2.0" scaleY="2.0" styleClass="txtFill" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="45.0" prefWidth="107.0" styleClass="txtFill" text="Room" />
+                  <HBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="1046.0">
+                     <children>
+                        <JFXHamburger fx:id="ham" styleClass="ham2">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXHamburger>
+                     </children>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="title" />
+                  <String fx:value="bg" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" layoutY="65.0" prefHeight="54.0" prefWidth="1200.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="dname" prefHeight="25.0" prefWidth="170.0" promptText="Doctor name" />
+                  <JFXTextField fx:id="pname" prefHeight="25.0" prefWidth="171.0" promptText="Patient name" />
+                  <JFXTextField fx:id="pcase" prefHeight="25.0" prefWidth="187.0" promptText="Case" />
+                  <JFXButton onAction="#print" prefHeight="31.0" prefWidth="80.0" text="Print">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <SVGPath content="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z" styleClass="txtFill" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton onAction="#change" prefHeight="31.0" prefWidth="96.0" text="Change">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <SVGPath content="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z" styleClass="txtFill" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton onAction="#clear" prefHeight="31.0" prefWidth="80.0" text="Clear">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <SVGPath content="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" styleClass="txtFill" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="table" layoutY="114.0" prefHeight="585.0" prefWidth="1200.0">
+               <columns>
+                  <TableColumn prefWidth="86.0" text="Patient ID">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="p_idcode" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="200.0" text="Patient Name">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="p_name" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="112.0" text="Doctor ID">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="dn_idcode" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="233.0" text="Doctor Name">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="dn_name" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="103.0" text="Date">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="date" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="103.0" text="Leave Date">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="leaveDate" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="272.0" text="Patient Case">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="patient_case" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="70.0" text="Room">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="r_id" />
+                     </cellValueFactory>
+                  </TableColumn>
+               </columns>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TableView>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="-2.0" layoutY="-2.0" prefHeight="700.0" prefWidth="158.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="bgWhite" />
+      <String fx:value="prefSize" />
+   </styleClass>
+</VBox>

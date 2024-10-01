@@ -1,0 +1,129 @@
+.prefSize{
+	-fx-pref-width: 1200px;
+	-fx-pref-height: 700px;
+}
+.prefSizeStaffDN{
+	-fx-pref-width: 1200px;
+	-fx-pref-height: 613px;
+}
+.bgColor{
+	-fx-background-color: linear-gradient(white, skyblue,white);
+}
+.txtFillBlue{
+	-fx-text-fill: #4059a9;
+	-fx-fill: #4059a9;
+	-fx-stroke: #4059a9;
+}
+.green{
+	-fx-background-color: #04bd41;
+}
+.down{
+	-fx-background-image: url(L.png);
+	-fx-background-repeat: no-repeat ;
+}
+.menu1:hover{
+	-fx-background-color: darkblue;
+}
+.list-cell:filled:selected {
+    -fx-background-color: #04bd41;
+}
+.table-view .column-header{
+    -fx-background-color: #4059a9;
+     -fx-alignment: top-center ;
+}
+
+.grid{
+	-fx-hgap: 10;
+	-fx-vgap: 10;
+	-fx-padding: 10;
+}
+.txtFill{
+	-fx-text-fill: white;
+	-fx-fill: white;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.btn:hover{
+	-fx-background-color: darkblue;
+}
+.hand{
+	-fx-cursor: hand ;
+}
+.bg{
+	 -fx-background-color:  #4059a9;
+}
+.comboFill{
+	-fx-fill:#4059a9;
+}
+.border{
+	-fx-border-color: black;
+	-fx-border-width: 2;
+}
+.borderUnder{
+	-fx-border-color: white;
+	-fx-border-width: 0 0 1 0;
+}
+.borderTitle{
+	-fx-border-color: black;
+	-fx-border-width:5;
+}
+.titleFont1{
+	-fx-font-size: 30px;
+	-fx-font-weight: bold;
+}
+.titleFont2{
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+}
+.titleFont3{
+	-fx-font-size: 15px;
+	-fx-font-weight: bold;
+}
+.titleFont4{
+	-fx-font-size: 13px;
+	-fx-font-weight: bold;
+}
+.menu:hover{
+	-fx-background-color: darkblue;
+}
+.borderNav{
+-fx-border-color: #4059a9;
+	-fx-border-width: 0 0 3 0;	
+}
+.borderImg{
+	-fx-border-color: black;
+	-fx-border-width: 2;	
+}
+.bgWhite{
+	-fx-background-color: white;
+}
+.title{
+	-fx-padding: 10;
+	-fx-font-size: 30;
+}
+.ham1 StackPane {
+	-fx-background-color: black;
+}
+.ham2 StackPane {
+	-fx-background-color: white;
+}
+
+.table-row-cell:selected {
+   -fx-background-color: #04bd41; 
+}
+.table-row-cell:selected .text {
+       -fx-fill: white;
+}
+.combo-box .list-cell:filled:selected{
+    -fx-background-color: #4059a9;
+}
+.combo-box .list-cell:filled:selected .text {
+    -fx-fill: white;
+        -fx-font-weight: bold;
+}
+
+.stroke{
+-fx-stroke: #4059a9;	
+}

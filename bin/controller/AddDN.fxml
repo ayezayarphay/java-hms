@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vb" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" spacing="10.0" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDN">
+   <children>
+      <VBox prefHeight="325.0" prefWidth="600.0" style="-fx-background-radius: 40;" styleClass="bgWhite">
+         <children>
+            <HBox style="-fx-background-radius: 40;">
+               <children>
+                  <Label text="Hospital Information" textFill="#4059a9">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="460.0" startX="-100.0" />
+            <AnchorPane prefHeight="265.0" prefWidth="561.0">
+               <children>
+                  <JFXComboBox fx:id="position" layoutX="1.0" layoutY="59.0" onAction="#setDepartment" prefHeight="25.0" prefWidth="182.0" promptText="Position" />
+                  <JFXComboBox fx:id="department" layoutX="1.0" layoutY="130.0" prefHeight="25.0" prefWidth="182.0" promptText="Department" />
+                  <JFXDatePicker fx:id="start_work_date" defaultColor="#4059a9" editable="false" layoutX="4.0" layoutY="198.0" prefHeight="28.0" prefWidth="130.0" promptText="Start work date" />
+                  <JFXTextArea fx:id="previous_hospital" layoutX="204.0" layoutY="14.0" prefHeight="69.0" prefWidth="176.0" promptText="Previous hospital(split with enter)" wrapText="true" />
+                  <VBox layoutX="402.0" layoutY="13.0" styleClass="borderImg">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="150.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+                  <JFXTextField fx:id="salary" layoutX="201.0" layoutY="199.0" prefHeight="25.0" prefWidth="108.0" promptText="Salary" />
+                  <JFXDatePicker fx:id="resign_date" defaultColor="#4059a9" layoutX="402.0" layoutY="231.0" prefHeight="28.0" prefWidth="130.0" promptText="Resign date" visible="false" />
+                  <JFXCheckBox fx:id="is_resign" checkedColor="#405aa8" layoutX="402.0" layoutY="212.0" onAction="#resignShow" text="is resign">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <HBox alignment="TOP_RIGHT" layoutX="358.0" layoutY="178.0" prefHeight="25.0" prefWidth="193.0" spacing="5.0">
+                     <children>
+                        <JFXButton onAction="#browse" prefHeight="25.0" prefWidth="71.0" text="Browse">
+                           <styleClass>
+                              <String fx:value="bg" />
+                              <String fx:value="txtFill" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#clear" prefHeight="25.0" prefWidth="71.0" text="Clear">
+                           <styleClass>
+                              <String fx:value="bg" />
+                              <String fx:value="txtFill" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <JFXTextArea fx:id="personal_skill" layoutX="204.0" layoutY="104.0" prefHeight="75.0" prefWidth="176.0" promptText="Personal skill(split with enter)" />
+                  <Label layoutY="15.0" text="ID:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="id_code" layoutX="24.0" layoutY="15.0" text="ID">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <VBox prefHeight="325.0" prefWidth="600.0" style="-fx-background-radius: 40;" styleClass="bgWhite">
+         <children>
+            <Label text="Personal Information" textFill="#4059a9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="460.0" startX="-100.0" />
+            <AnchorPane prefHeight="258.0" prefWidth="561.0">
+               <children>
+                  <HBox prefHeight="207.0" prefWidth="561.0" spacing="20.0">
+                     <children>
+                        <VBox spacing="30.0">
+                           <children>
+                              <JFXTextField fx:id="name" promptText="Name" />
+                              <JFXTextField fx:id="father_name" promptText="Father Name" />
+                              <JFXTextField fx:id="mother_name" promptText="Mother Name" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="167.0" prefWidth="187.0" spacing="30.0">
+                           <children>
+                              <JFXDatePicker fx:id="dob" defaultColor="#405aa8" editable="false" prefHeight="28.0" prefWidth="130.0" promptText="DOB" />
+                              <JFXTextField fx:id="nrc" promptText="NRC (eg 12/SAKANA(N)000000)" />
+                              <HBox prefHeight="17.0" prefWidth="167.0" spacing="10.0">
+                                 <children>
+                                    <JFXRadioButton fx:id="male" selected="true" style="-jfx-selected-color: #4059a9;" text="Male">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="gender" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="female" style="-jfx-selected-color: #4059a9;" text="Female" toggleGroup="$gender">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXRadioButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="183.0" prefWidth="193.0" spacing="20.0">
+                           <children>
+                              <JFXTextArea fx:id="address" prefHeight="49.0" prefWidth="200.0" promptText="Address" wrapText="true" />
+                              <JFXTextArea fx:id="degree" prefHeight="69.0" prefWidth="189.0" promptText="Degree(split with enter)" wrapText="true" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" layoutX="345.0" layoutY="213.0" prefHeight="25.0" prefWidth="193.0" spacing="5.0">
+                     <children>
+                        <JFXButton fx:id="add" onAction="#add" prefHeight="25.0" prefWidth="80.0" text="Add">
+                           <styleClass>
+                              <String fx:value="bg" />
+                              <String fx:value="txtFill" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#close" prefHeight="25.0" prefWidth="80.0" text="Close">
+                           <styleClass>
+                              <String fx:value="bg" />
+                              <String fx:value="txtFill" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

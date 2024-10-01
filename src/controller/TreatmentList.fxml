@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox fx:id="mainVb" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TreatmentList">
+   <children>
+      <AnchorPane prefHeight="719.0" prefWidth="1000.0" stylesheets="@color.css">
+         <children>
+            <HBox layoutY="-3.0" prefHeight="65.0" prefWidth="1200.0" AnchorPane.bottomAnchor="638.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+               <children>
+                  <AnchorPane prefHeight="45.0" prefWidth="63.0">
+                     <children>
+                        <SVGPath content="M5 8h2v8H5zm7 0H9c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 6h-1v-4h1v4zm7-6h-3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 6h-1v-4h1v4zM2 4v16h20V4H2zm2 14V6h16v12H4z" layoutX="20.0" layoutY="10.0" scaleX="2.0" scaleY="2.0" styleClass="txtFill" />
+                     </children>
+                  </AnchorPane>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <Label fx:id="title" prefHeight="45.0" prefWidth="305.0" styleClass="txtFill" text="Payment" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="827.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXHamburger fx:id="ham" styleClass="ham2">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXHamburger>
+                     </children>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="title" />
+                  <String fx:value="bg" />
+               </styleClass>
+            </HBox>
+            <VBox layoutY="62.0" prefHeight="639.0" prefWidth="1200.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <HBox fx:id="hb1" alignment="CENTER" prefWidth="600.0" styleClass="bgWhite">
+                           <children>
+                              <Label onMouseClicked="#tempory" styleClass="titleFont3" text="Temporary">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox fx:id="hb2" alignment="CENTER" prefWidth="600.0" styleClass="bgWhite">
+                           <children>
+                              <Label onMouseClicked="#hospital" styleClass="titleFont3" text="Hospital">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="vb" prefHeight="613.0" prefWidth="1200.0" />
+               </children>
+            </VBox>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="-1.0" layoutY="-3.0" prefHeight="707.0" prefWidth="202.0" />
+         </children>
+         <styleClass>
+            <String fx:value="prefSize" />
+            <String fx:value="bgWhite" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="bgWhite" />
+      <String fx:value="prefSize" />
+   </styleClass>
+</VBox>

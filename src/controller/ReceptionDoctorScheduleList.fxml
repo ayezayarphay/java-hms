@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vb" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1200.0" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionDoctorScheduleList">
+   <styleClass>
+      <String fx:value="bgWhite" />
+      <String fx:value="prefSize" />
+   </styleClass>
+   <children>
+      <AnchorPane prefHeight="768.0" prefWidth="1200.0">
+         <children>
+            <HBox prefWidth="1200.0">
+               <children>
+                  <AnchorPane prefHeight="45.0" prefWidth="49.0">
+                     <children>
+                        <SVGPath content="M17 10H7v2h10v-2zm2-7h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zm-5-5H7v2h7v-2z" layoutX="2.0" layoutY="12.0" scaleX="2.0" scaleY="2.0" styleClass="txtFill" />
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="45.0" prefWidth="233.0" styleClass="txtFill" text="Doctor Schedule" />
+                  <HBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="906.0">
+                     <children>
+                        <JFXHamburger fx:id="ham" styleClass="ham2">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXHamburger>
+                     </children>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="title" />
+                  <String fx:value="bg" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" layoutY="65.0" prefHeight="51.0" prefWidth="1200.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="idcode" prefHeight="25.0" prefWidth="75.0" promptText="DN ID  " />
+                  <JFXTextField fx:id="name" prefHeight="25.0" prefWidth="170.0" promptText="DN Name" />
+                  <JFXButton onAction="#clear" prefHeight="12.0" prefWidth="80.0" text="Clear">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <SVGPath content="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" styleClass="txtFill" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="table" layoutY="116.0" prefHeight="584.0" prefWidth="1200.0">
+               <columns>
+                  <TableColumn prefWidth="98.0" text="ID">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="idcode" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="327.0" text="Name">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="name" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="470.0" text="Day of week">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="dayOfWeek" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="155.0" text="Start Time">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="startTime" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="150.0" text="End time">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="endTime" />
+                     </cellValueFactory>
+                  </TableColumn>
+               </columns>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TableView>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="-2.0" prefHeight="700.0" prefWidth="193.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

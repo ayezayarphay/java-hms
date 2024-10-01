@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="586.0" style="-fx-background-color: white;" styleClass="down" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login">
+   <children>
+      <AnchorPane fx:id="ap" layoutX="340.0" layoutY="68.0" prefHeight="277.0" prefWidth="231.0" style="-fx-background-color: white; -fx-background-radius: 40;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="51.0" layoutY="-1.0" text="My Hospital">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="55.0" text="Sign in">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <GridPane hgap="10.0" layoutX="18.0" layoutY="76.0" prefHeight="136.0" prefWidth="203.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="36.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="162.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <SVGPath content="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" focusTraversable="true" layoutX="5.0" layoutY="8.0" scaleX="1.5" scaleY="1.5" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane GridPane.rowIndex="1">
+                     <children>
+                        <SVGPath content="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" focusTraversable="true" layoutX="7.0" layoutY="8.0" scaleX="1.5" scaleY="1.5" />
+                     </children>
+                  </AnchorPane>
+                  <JFXTextField fx:id="userID" promptText="Enter User ID" GridPane.columnIndex="1" />
+                  <JFXPasswordField fx:id="password" promptText="Enter Password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXButton onAction="#login" prefHeight="38.0" prefWidth="303.0" text="Signin" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </GridPane>
+            <HBox alignment="CENTER" layoutX="60.0" layoutY="220.0" prefHeight="31.0" prefWidth="166.0">
+               <children>
+                  <Label onMouseClicked="#forgetPasswordView" prefHeight="17.0" prefWidth="87.0" text="Forget Password" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#createPassword" prefHeight="17.0" prefWidth="79.0" text="Create Password" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label layoutX="35.0" layoutY="30.0" text="Hospital Management System">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

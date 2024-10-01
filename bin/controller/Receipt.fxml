@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vb" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="600.0" spacing="5.0" styleClass="bgWhite" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Receipt">
+   <children>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="123.0" text="My Hospital ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Line endX="470.0" endY="-0.4142105281352997" startX="-100.0" stroke="#2503cf" strokeWidth="2.0" styleClass="stroke">
+         <VBox.margin>
+            <Insets left="15.0" />
+         </VBox.margin>
+      </Line>
+      <VBox prefHeight="307.0" prefWidth="392.0" spacing="5.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <AnchorPane prefHeight="23.0" prefWidth="580.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="2.0" text="No">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="55.0" layoutY="1.0" text="Name">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="271.0" layoutY="2.0" text="Qty">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="372.0" layoutY="1.0" text="Price">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="466.0" layoutY="1.0" text="Amount">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane prefHeight="255.0" prefWidth="580.0">
+               <content>
+                  <FlowPane fx:id="tile" hgap="10.0" prefHeight="231.0" prefWidth="578.0" styleClass="bgWhite" vgap="10.0" />
+               </content>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <GridPane hgap="10.0" prefWidth="394.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="298.0" minWidth="10.0" prefWidth="297.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="304.0" minWidth="10.0" prefWidth="230.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Total">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Cash" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Pay back" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane GridPane.columnIndex="1">
+               <children>
+                  <JFXTextField fx:id="total" editable="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <JFXTextField fx:id="cash" onAction="#cash" prefHeight="25.0" prefWidth="135.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <JFXTextField fx:id="charge" editable="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <VBox prefHeight="74.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <Label text="Thank You">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="470.0" startX="-100.0" strokeWidth="2.0" styleClass="stroke" />
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <JFXButton onAction="#OK" prefHeight="36.0" prefWidth="115.0" text="OK">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="450.0" prefWidth="1000.0" spacing="10.0" styleClass="bgWhite" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChooseHospitalRoom">
+   <children>
+      <HBox prefHeight="71.0" prefWidth="601.0" spacing="10.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+                     <children>
+                        <Label text="Floor 4">
+                           <styleClass>
+                              <String fx:value="titleFont3" />
+                              <String fx:value="txtFill" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <FlowPane fx:id="fp1" hgap="10.0" prefHeight="72.0" prefWidth="392.0" vgap="10.0">
+                     <children>
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="031" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="032" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="033" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="034" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="035" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="036" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="037" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="038" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="039" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="040" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="72.0" prefWidth="503.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+                     <children>
+                        <Label text="Floor 9">
+                           <styleClass>
+                              <String fx:value="titleFont3" />
+                              <String fx:value="txtFill" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <FlowPane fx:id="fp6" hgap="10.0" prefHeight="72.0" prefWidth="392.0" vgap="10.0">
+                     <children>
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="081" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="082" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="083" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="084" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="085" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="086" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="087" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="088" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="089" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="090" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="71.0" prefWidth="601.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+               <children>
+                  <Label text="Floor 5">
+                     <styleClass>
+                        <String fx:value="titleFont3" />
+                        <String fx:value="txtFill" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </VBox>
+            <FlowPane fx:id="fp2" hgap="10.0" prefHeight="72.0" prefWidth="390.0" vgap="10.0">
+               <children>
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="041" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="042" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="043" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="044" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="045" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="046" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="047" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="048" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="049" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="050" />
+               </children>
+            </FlowPane>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+                     <children>
+                        <Label text="Floor 10">
+                           <styleClass>
+                              <String fx:value="titleFont3" />
+                              <String fx:value="txtFill" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <FlowPane fx:id="fp7" hgap="10.0" prefHeight="72.0" prefWidth="392.0" vgap="10.0">
+                     <children>
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="091" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="092" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="093" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="094" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="095" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="096" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="097" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="098" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="099" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="100" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="71.0" prefWidth="601.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+               <children>
+                  <Label text="Floor 6">
+                     <styleClass>
+                        <String fx:value="titleFont3" />
+                        <String fx:value="txtFill" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </VBox>
+            <FlowPane fx:id="fp3" hgap="10.0" prefHeight="72.0" prefWidth="390.0" vgap="10.0">
+               <children>
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="051" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="052" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="053" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="054" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="055" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="056" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="057" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="058" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="059" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="060" />
+               </children>
+            </FlowPane>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+                     <children>
+                        <Label text="Floor 11">
+                           <styleClass>
+                              <String fx:value="titleFont3" />
+                              <String fx:value="txtFill" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <FlowPane fx:id="fp8" hgap="10.0" prefHeight="72.0" prefWidth="392.0" vgap="10.0">
+                     <children>
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="101" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="102" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="103" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="104" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="105" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="106" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="107" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="108" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="109" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="110" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="71.0" prefWidth="601.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+               <children>
+                  <Label text="Floor 7">
+                     <styleClass>
+                        <String fx:value="titleFont3" />
+                        <String fx:value="txtFill" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </VBox>
+            <FlowPane fx:id="fp4" hgap="10.0" prefHeight="72.0" prefWidth="390.0" vgap="10.0">
+               <children>
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="061" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="062" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="063" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="064" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="065" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="066" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="067" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="068" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="069" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="070" />
+               </children>
+            </FlowPane>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+                     <children>
+                        <Label text="Floor 12">
+                           <styleClass>
+                              <String fx:value="titleFont3" />
+                              <String fx:value="txtFill" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <FlowPane fx:id="fp9" hgap="10.0" prefHeight="72.0" prefWidth="392.0" vgap="10.0">
+                     <children>
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="111" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="112" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="113" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="114" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="115" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="116" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="117" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="118" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="119" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="120" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="71.0" prefWidth="601.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+               <children>
+                  <Label text="Floor 8">
+                     <styleClass>
+                        <String fx:value="titleFont3" />
+                        <String fx:value="txtFill" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </VBox>
+            <FlowPane fx:id="fp5" hgap="10.0" prefHeight="72.0" prefWidth="390.0" vgap="10.0">
+               <children>
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="071" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="072" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="073" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="074" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="075" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="076" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="077" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="078" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="079" />
+                  <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="080" />
+               </children>
+            </FlowPane>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="72.0" prefWidth="70.0" styleClass="bg">
+                     <children>
+                        <Label text="Floor 13">
+                           <styleClass>
+                              <String fx:value="titleFont3" />
+                              <String fx:value="txtFill" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <FlowPane fx:id="fp10" hgap="10.0" prefHeight="72.0" prefWidth="392.0" vgap="10.0">
+                     <children>
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="121" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="122" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="123" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="124" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="125" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="126" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="127" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="128" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="129" />
+                        <JFXButton prefHeight="31.0" prefWidth="70.0" style="-fx-border-color: black;" styleClass="titleFont4" text="130" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

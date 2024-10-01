@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="500.0" prefWidth="446.0" styleClass="bgWhite" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddHospitalPatient">
+   <children>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label styleClass="txtFill" text="Add HospitalPatient " />
+         </children>
+         <styleClass>
+            <String fx:value="bg" />
+            <String fx:value="title" />
+         </styleClass>
+      </HBox>
+      <VBox prefHeight="517.0" prefWidth="446.0" spacing="15.0">
+         <children>
+            <VBox spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="pname" promptText="Patient Name" />
+                  <JFXListView fx:id="listp" prefHeight="100.0" prefWidth="446.0" />
+               </children>
+            </VBox>
+            <VBox spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="dname" promptText="Doctor Name" />
+                  <JFXListView fx:id="listd" prefHeight="100.0" prefWidth="446.0" />
+               </children>
+            </VBox>
+            <JFXTextField fx:id="pcase" promptText="Case" />
+            <HBox spacing="5.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT">
+                     <children>
+                        <Label styleClass="titleFont3" text="Room:" />
+                        <Label fx:id="chooseRoom" onMouseClicked="#showRoom" styleClass="titleFont3" text="Choose Room" underline="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="272.0">
+                     <children>
+                        <JFXDatePicker fx:id="leaveDate" defaultColor="#4059a9" promptText="Leave date" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="426.0" spacing="10.0">
+               <children>
+                  <JFXButton onAction="#add" prefHeight="33.0" prefWidth="210.0" text="Add">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont4" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton onAction="#close" prefHeight="33.0" prefWidth="210.0" text="Close">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont4" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

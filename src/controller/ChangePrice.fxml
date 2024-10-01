@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="250.0" prefWidth="400.0" styleClass="bgWhite" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChangePrice">
+   <children>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label styleClass="txtFill" text="Change Price" />
+         </children>
+         <styleClass>
+            <String fx:value="title" />
+            <String fx:value="bg" />
+         </styleClass>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="250.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <HBox alignment="TOP_CENTER" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="from" prefHeight="25.0" prefWidth="90.0" promptText="Room from" />
+                  <JFXTextField fx:id="to" onAction="#toSetText" prefHeight="25.0" prefWidth="90.0" promptText="Room to" />
+                  <JFXTextField fx:id="price" prefHeight="25.0" prefWidth="90.0" promptText="Price" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" spacing="10.0">
+               <children>
+                  <JFXButton onAction="#change" prefHeight="31.0" prefWidth="135.0" text="Change">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont3" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton onAction="#close" prefHeight="31.0" prefWidth="135.0" text="Close">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="titleFont3" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <GridPane alignment="TOP_CENTER" hgap="10.0" vgap="10.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="192.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="178.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label styleClass="titleFont3" text="Original Price" />
+                  <Label styleClass="titleFont3" text="Current Price" GridPane.rowIndex="1" />
+                  <Label fx:id="original" styleClass="titleFont3" GridPane.columnIndex="1" />
+                  <Label fx:id="current" styleClass="titleFont3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

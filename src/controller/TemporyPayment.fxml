@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox fx:id="mainVb" prefHeight="600.0" prefWidth="450.0" spacing="10.0" styleClass="bgWhite" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TemporyPayment">
+   <children>
+      <AnchorPane focusTraversable="true" prefHeight="63.0" prefWidth="398.0" styleClass="bg">
+         <children>
+            <Label layoutX="161.0" layoutY="11.0" prefHeight="21.0" prefWidth="88.0" text="Payment ID:">
+               <styleClass>
+                  <String fx:value="titleFont3" />
+                  <String fx:value="txtFill" />
+               </styleClass>
+            </Label>
+            <Label fx:id="pID" layoutX="249.0" layoutY="11.0" prefHeight="21.0" prefWidth="88.0" text="ID">
+               <styleClass>
+                  <String fx:value="titleFont3" />
+                  <String fx:value="txtFill" />
+               </styleClass>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox alignment="TOP_CENTER" spacing="10.0">
+         <children>
+            <JFXButton onAction="#close" prefWidth="95.0" text="Close">
+               <graphic>
+                  <SVGPath content="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" styleClass="txtFill" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="bg" />
+                  <String fx:value="txtFill" />
+                  <String fx:value="titleFont4" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton onAction="#voucher" prefHeight="29.0" prefWidth="95.0" text="Voucher">
+               <graphic>
+                  <SVGPath content="M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14c0-1.11-.9-2-2-2zM11 16l4-4-4-4v3H1v2h10v3z" styleClass="txtFill" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="bg" />
+                  <String fx:value="txtFill" />
+                  <String fx:value="titleFont4" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" spacing="10.0">
+         <children>
+            <JFXTextField fx:id="serviceName" prefHeight="25.0" prefWidth="220.0" promptText="Service name" />
+            <JFXTextField fx:id="servicePrice" prefHeight="25.0" prefWidth="80.0" promptText="Service price" />
+            <AnchorPane prefHeight="25.0" prefWidth="25.0" style="-fx-border-color: black; -fx-border-radius: 50;">
+               <children>
+                  <SVGPath content="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" onMouseClicked="#add" scaleX="1.5" scaleY="1.5">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SVGPath>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <ScrollPane prefHeight="473.0" prefWidth="398.0" styleClass="bgWhite">
+         <content>
+            <VBox fx:id="vb" alignment="TOP_CENTER" prefHeight="449.0" prefWidth="446.0" spacing="30.0" styleClass="bgWhite">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

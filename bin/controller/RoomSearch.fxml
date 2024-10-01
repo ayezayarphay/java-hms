@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox fx:id="mainVb" prefHeight="600.0" prefWidth="1200.0" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomSearch">
+   <children>
+      <HBox>
+         <children>
+            <AnchorPane prefHeight="45.0" prefWidth="34.0">
+               <children>
+                  <SVGPath content="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" layoutX="5.0" layoutY="10.0" scaleX="2.0" scaleY="2.0" styleClass="txtFill" />
+               </children>
+            </AnchorPane>
+            <Label styleClass="txtFill" text="Search" />
+            <HBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="1058.0">
+               <children>
+                  <AnchorPane prefHeight="45.0" prefWidth="34.0">
+                     <children>
+                        <SVGPath content="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" layoutX="5.0" layoutY="11.0" onMouseClicked="#back" scaleX="2.0" scaleY="2.0" styleClass="txtFill">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </SVGPath>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="bg" />
+            <String fx:value="title" />
+         </styleClass>
+      </HBox>
+      <VBox prefHeight="639.0" prefWidth="1200.0">
+         <children>
+            <HBox>
+               <children>
+                  <HBox fx:id="hb1" alignment="CENTER" prefWidth="600.0" styleClass="bgWhite">
+                     <children>
+                        <Label onMouseClicked="#hp" styleClass="titleFont3" text="Hospital patient">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hb2" alignment="CENTER" prefWidth="600.0" styleClass="bgWhite">
+                     <children>
+                        <Label onMouseClicked="#app" styleClass="titleFont3" text="Appointment Patient">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox fx:id="vb" prefHeight="613.0" prefWidth="1200.0" />
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="bgWhite" />
+      <String fx:value="prefSize" />
+   </styleClass>
+</VBox>

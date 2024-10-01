@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vb" styleClass="prefSize" stylesheets="@color.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PharmacyPOS">
+   <children>
+      <HBox prefHeight="657.0" prefWidth="1000.0" spacing="15.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="680.0" prefWidth="1016.0" spacing="10.0" styleClass="bgWhite" HBox.hgrow="ALWAYS">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="111.0" prefWidth="508.0">
+                     <children>
+                        <AnchorPane prefHeight="111.0" prefWidth="150.0">
+                           <children>
+                              <SVGPath content="M89.217,72.686c0.111-0.332,0.174-0.688,0.174-1.058V32.771c0-1.842-1.494-3.335-3.336-3.335H67.488v41.359c0,0.664-0.12,1.299-0.332,1.891h-2.178c0.111-0.332,0.174-0.688,0.174-1.058V18.261c0-1.842-1.494-3.335-3.336-3.335H32.687c-1.842,0-3.335,1.493-3.335,3.335v53.367c0,0.37,0.063,0.726,0.174,1.058h-2.177c-0.212-0.592-0.332-1.227-0.332-1.891V29.436H8.895c-1.842,0-3.335,1.493-3.335,3.335v38.857c0,0.37,0.063,0.726,0.173,1.058H0v6.894h94.505v-6.894H89.217L89.217,72.686z M15.565,59.064h-4.781v-4.78h4.781V59.064z M15.565,50.671h-4.781V45.89h4.781V50.671z M15.565,42.555h-4.781v-4.781h4.781V42.555z M23.015,59.064h-4.781v-4.78h4.781V59.064z M23.015,50.671h-4.781V45.89h4.781V50.671z M23.015,42.555h-4.781v-4.781h4.781V42.555z M54.674,72.463H40.637V54.951h14.037V72.463z M47.252,39.941c-6.493,0-11.757-5.264-11.757-11.757c0-6.494,5.265-11.758,11.757-11.758c6.494,0,11.758,5.264,11.758,11.758C59.01,34.678,53.746,39.941,47.252,39.941z M77.605,59.064h-4.78v-4.78h4.78V59.064z M77.605,50.671h-4.78V45.89h4.78V50.671z M77.605,42.555h-4.78v-4.781h4.78V42.555z M85.054,59.064h-4.78v-4.78h4.78V59.064z M85.054,50.671h-4.78V45.89h4.78V50.671z M85.054,42.555h-4.78v-4.781h4.78V42.555z M50.17,25.266h4.503v5.836H50.17v4.505h-5.836v-4.505h-4.503v-5.836h4.503v-4.503h5.836V25.266z" layoutX="8.0" layoutY="-1.0" />
+                              <Label layoutX="16.0" layoutY="79.0" text="My Hospital">
+                                 <font>
+                                    <Font name="Bell MT" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <VBox alignment="TOP_RIGHT" prefHeight="111.0" prefWidth="748.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="114.0" prefWidth="577.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Total">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="totalCost" text="0">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Line endX="809.0" startX="-100.0" />
+                  <HBox fx:id="hb" alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="724.0" spacing="15.0">
+                     <children>
+                        <JFXTextField fx:id="patient_id" alignment="TOP_LEFT" onAction="#patientID" prefHeight="31.0" prefWidth="77.0" promptText="Patient ID">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="pharmacy_id" alignment="TOP_LEFT" onAction="#pharmacyID" prefHeight="25.0" prefWidth="86.0" promptText="Phar ID">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="pharmacy_name" alignment="TOP_LEFT" editable="false" prefHeight="25.0" prefWidth="163.0" promptText="Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="price" alignment="TOP_LEFT" editable="false" prefHeight="25.0" prefWidth="92.0" promptText="Price">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="qty" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="41.0" promptText="Qty">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="add" onAction="#add" prefHeight="35.0" prefWidth="75.0" text="Add">
+                           <styleClass>
+                              <String fx:value="bg" />
+                              <String fx:value="txtFill" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <SVGPath fx:id="edit" content="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" onDragDetected="#add" styleClass="txtFill" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#clear" prefHeight="35.0" prefWidth="75.0" text="Clear">
+                           <styleClass>
+                              <String fx:value="bg" />
+                              <String fx:value="txtFill" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <SVGPath content="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" styleClass="txtFill" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="table" prefHeight="463.0" prefWidth="721.0">
+                    <columns>
+                      <TableColumn prefWidth="88.0" text="Pharmacy ID">
+                      <cellValueFactory>
+                      <PropertyValueFactory property="pharmacy_id" />
+                      </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn prefWidth="252.0" text="Name">
+                      <cellValueFactory>
+                      <PropertyValueFactory property="name" />
+                      </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="128.0" text="Price">
+                      <cellValueFactory>
+                      <PropertyValueFactory property="price" />
+                      </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="45.0" text="Qty">
+                      <cellValueFactory>
+                      <PropertyValueFactory property="qty" />
+                      </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="210.0" text="Amount">
+                      <cellValueFactory>
+                      <PropertyValueFactory property="amount" />
+                      </cellValueFactory>
+                      </TableColumn>
+                    </columns>
+                     <styleClass>
+                        <String fx:value="bgWhite" />
+                        <String fx:value="tx" />
+                     </styleClass>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="650.0" prefWidth="339.0" spacing="10.0" styleClass="bgWhite" HBox.hgrow="ALWAYS">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <AnchorPane fx:id="pf" layoutX="196.0" layoutY="2.0" onMouseClicked="#signOut">
+                           <children>
+                              <SVGPath fx:id="powerOff" content="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </SVGPath>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="cp" layoutY="1.0" prefHeight="21.0" prefWidth="26.0">
+                           <children>
+                              <SVGPath fx:id="changePassword" content="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" onMouseClicked="#showProfile">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </SVGPath>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <HBox>
+                     <children>
+                        <JFXTextField fx:id="searchPharmacy" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="219.0" promptText="Pharmacy Name" />
+                     </children>
+                  </HBox>
+                  <JFXListView fx:id="list" prefHeight="317.0" prefWidth="219.0" styleClass="list-cell" VBox.vgrow="ALWAYS" />
+                  <JFXButton onAction="#voucher" prefHeight="60.0" prefWidth="230.0" text="Voucher">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <SVGPath content="M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14c0-1.11-.9-2-2-2zM11 16l4-4-4-4v3H1v2h10v3z" styleClass="txtFill" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton onAction="#delete" prefHeight="60.0" prefWidth="230.0" text="Delete">
+                     <styleClass>
+                        <String fx:value="bg" />
+                        <String fx:value="txtFill" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <SVGPath content="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" styleClass="txtFill" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <GridPane hgap="10.0" prefHeight="66.0" prefWidth="225.0" vgap="10.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="47.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="162.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="ID:">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="Name:" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="userID" text="Staff ID" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="username" text="Staff name" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
